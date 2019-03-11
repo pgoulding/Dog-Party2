@@ -20,9 +20,18 @@ nav{
   width: 100%
 }
 
+nav img{
+  width: 30px;
+}
+
 /*---------- Header ----------------*/
 header{
-  background-image: url("images/");
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("images/park.jpg");
+  z-index: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 /*---------- Aritcle ---------------*/
@@ -42,7 +51,13 @@ section p{
   height: 170px;
   text-align: left;
 }
-
+.doggo-pics{
+    border-radius: 50%;
+    width: 200px;
+    border: 4px;
+    border-color: #048eaa;
+    border-style: solid;
+}
 .doggo-section-button{
   background-color: #048eaa;
   color: white;
@@ -63,6 +78,10 @@ footer{
   display: block;
   background-color: #048eaa;
   color: #ffffff;
+}
+
+.social-share{
+  width: 30px;
 }
 
 /*---------- Media Queries ---------*/
