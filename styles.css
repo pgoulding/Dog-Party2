@@ -1,6 +1,6 @@
 /*---------- Body ------------------*/
 *{
-  border-top: 1px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
 }
 html{
@@ -22,9 +22,19 @@ nav{
 
 nav img{
   width: 30px;
+  display: inline-block;
+}
+.right-nav{
+  
+}
+.left-nav{
+
+}
+/*---------- Header ----------------*/
+h1{
+  color: #ffffff;
 }
 
-/*---------- Header ----------------*/
 header{
   background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("images/park.jpg");
   z-index: 0;
@@ -32,6 +42,26 @@ header{
   width: 100%;
   background-size: cover;
   background-position: center;
+}
+
+form{
+  margin-bottom: 20px;
+}
+label{
+  color: #ffffff;
+}
+input{
+  outline: none;
+}
+#doggo-name{
+  width: 150px;
+  outline: none;
+}
+
+label,
+input,
+#doggo-name;{
+
 }
 
 /*---------- Aritcle ---------------*/
