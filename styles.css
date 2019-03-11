@@ -1,0 +1,62 @@
+/*---------- Body ------------------*/
+*{
+  border-top: 1px solid red;
+  box-sizing: border-box;
+}
+
+body{
+
+}
+
+/*---------- Nav -------------------*/
+nav{
+display: inline-block;
+}
+
+/*---------- Header ----------------*/
+header{
+  background-image: url("images/");
+}
+
+/*---------- Aritcle ---------------*/
+article{
+  max-width: 800px;
+}
+
+/*---------- Section ---------------*/
+section{
+  float: left;
+  width: 240px;
+  
+}
+
+section p{
+  height: 170px;
+}
+
+/*---------- Footer ----------------*/
+footer{
+  display: block;
+}
+
+/*---------- Media Queries ---------*/
+
+/*---- Large Tablet/Small Comp -----*/
+@media screen and (max-width: 1024px){
+
+}
+
+/*---- Typical Tablet Size ---------*/
+@media screen and (max-width: 768px){
+
+}
+
+/*---- Large Phones ----------------*/
+@media screen and (max-width: 440px){
+
+}
+
+/*---- Small Screens ---------------*/
+@media screen and (max-width: 320px){
+
+}
