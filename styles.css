@@ -3,14 +3,21 @@
   border-top: 1px solid red;
   box-sizing: border-box;
 }
+html{
+  height: 100%;
+}
 
 body{
-
+  height: 100%;
+  text-align: center;
 }
 
 /*---------- Nav -------------------*/
 nav{
-display: inline-block;
+  display: inline-block;
+  background-color: #75e2e6;
+  border-bottom: 2px solid #048eaa;
+  width: 100%
 }
 
 /*---------- Header ----------------*/
@@ -21,22 +28,41 @@ header{
 /*---------- Aritcle ---------------*/
 article{
   max-width: 800px;
+  display: inline-block;
 }
 
 /*---------- Section ---------------*/
 section{
   float: left;
   width: 240px;
-  
+  margin: 10px;
 }
 
 section p{
   height: 170px;
+  text-align: left;
 }
 
+.doggo-section-button{
+  background-color: #048eaa;
+  color: white;
+}
+/*.left{
+  float: left;
+}
+
+.center{
+  float: center;
+}
+
+.right{
+  float: right;
+}*/
 /*---------- Footer ----------------*/
 footer{
   display: block;
+  background-color: #048eaa;
+  color: #ffffff;
 }
 
 /*---------- Media Queries ---------*/
