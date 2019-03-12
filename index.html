@@ -9,26 +9,29 @@
 </head>
 <body>
 <nav>
-  <div class="left-nav">
-    <a href=""><img src="images/dog-icon.svg"></a>
-  </div>
-  <div class="right-nav">
-    <a href="">How to Dog</a>
-    <a href="">What is Dog</a>
-    <a href="">Facts From Dog</a>
+  <div class="limit-width clearfix">
+    <div class="left-icon">
+      <a href=""><img src="images/dog-icon.svg" class="icon-img" align="middle"></a>
+    </div>
+    <div class="right-nav clearfix">
+      <a href="">How to Dog</a>
+      <a href="">What is Dog</a>
+      <a href="">Facts From Dog</a>
+    </div>
   </div>
 </nav>
 <header>
-<h1>A Site about <span>Some Dogs</span></h1>
+<h1>A Site about <span class="main-doggo-name">Some Dogs</span></h1>
 <img src="images/dog1-sq.jpg" class="doggo-pics">
 <form>
   <label>Name</label>
   <br>
-  <input type="text" name="">
+  <input type="text" name="" class="doggo-name-input">
   <br>
   <button id="doggo-name">Name This Dog</button>
 </form>
 </header>
+<div class="background-article">
 <article>
   <section class="left">
     <h2>How To Dog</h2>
@@ -73,6 +76,7 @@ made many woofs.</p>
 <button class="doggo-section-button">Facts</button>
   </section>
 </article>
+</div>
 <footer>
   <p class="footer-text">Learn About Dogs Online</p>
   <a href=""><img src="images/twitter.svg" class="social-share"></a>

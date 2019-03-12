@@ -1,6 +1,6 @@
 /*---------- Body ------------------*/
 *{
-  border: 1px solid red;
+/*  border: 1px solid red;*/
   box-sizing: border-box;
 }
 html{
@@ -10,29 +10,65 @@ html{
 body{
   height: 100%;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #048eaa;
+}
+a{
+  text-decoration: none;
 }
 
+.clearfix:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
 /*---------- Nav -------------------*/
 nav{
   display: inline-block;
   background-color: #75e2e6;
-  border-bottom: 2px solid #048eaa;
-  width: 100%
+/*  border-bottom: 2px solid #048eaa;*/
+  width: 100%;
+  padding: 0 10px;
+}
+
+nav a{
+  height: 100%;
+  padding: 12px 10px;
+}
+
+nav a:hover{
+  background-color: #048eaa;
+  color: #ffffff;
 }
 
 nav img{
-  width: 30px;
-  display: inline-block;
+  width: 40px;
+  display: inline;
+  background-color: #75e2e6;
+}
+
+.limit-width{
+  max-width: 800px;
+  margin: auto;
+  padding: 5px 0;
 }
 .right-nav{
-  
+  text-decoration: none;
+  text-align: right;
+  display: inline;
+  float: right;
 }
-.left-nav{
 
+.left-icon{
+  text-align: left;
+  display: inline;
+  float: left;
 }
 /*---------- Header ----------------*/
 h1{
   color: #ffffff;
+  margin: 0;
+  padding: 20px;
 }
 
 header{
@@ -45,29 +81,40 @@ header{
 }
 
 form{
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  max-width: 380px;
+  margin: auto;
+  text-align: left;
 }
+
 label{
   color: #ffffff;
+  margin-bottom: 15px;
 }
+
 input{
   outline: none;
+  margin-bottom: 15px;
+  width: 100%;
 }
+
 #doggo-name{
-  width: 150px;
+  width: 100%;
   outline: none;
-}
-
-label,
-input,
-#doggo-name;{
-
+  margin-bottom:15px;
+  background-color: #75e2e6;
+  outline: none;
+  border: 0;
 }
 
 /*---------- Aritcle ---------------*/
+.background-article{
+  background-color:#ffffff;
+}
 article{
   max-width: 800px;
   display: inline-block;
+  background-color: #ffffff;
 }
 
 /*---------- Section ---------------*/
@@ -91,6 +138,13 @@ section p{
 .doggo-section-button{
   background-color: #048eaa;
   color: white;
+  width: 240px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.doggo-section-button:hover{
+  background-color: #75e2e6;
+  color: black;
 }
 /*.left{
   float: left;
@@ -108,10 +162,12 @@ footer{
   display: block;
   background-color: #048eaa;
   color: #ffffff;
+  padding: 20px;
 }
 
 .social-share{
   width: 30px;
+  margin: 10px;
 }
 
 /*---------- Media Queries ---------*/
