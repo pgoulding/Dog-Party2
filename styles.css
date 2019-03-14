@@ -1,6 +1,5 @@
 /*---------- Body ------------------*/
 *{
-  border-top: 1px solid red;
   box-sizing: border-box;
 }
 html{
@@ -10,32 +9,154 @@ html{
 body{
   height: 100%;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #048eaa;
 }
 
 /*---------- Nav -------------------*/
 nav{
-  display: inline-block;
   background-color: #75e2e6;
-  border-bottom: 2px solid #048eaa;
-  width: 100%
+  display: inline-block;
+  width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color:black;
+}
+
+nav a{
+  height: 100%;
+}
+
+nav img{
+  -webkit-transition: transform 1s;
+  background-color: #75e2e6;
+  display: inline;
+  margin: 5px;
+  width: 40px;
+}
+
+nav img:hover{
+  -webkit-transform: rotate(45deg);
+}
+
+.limit-width{
+  margin: auto;
+  max-width: 1000px;
+  padding-bottom:5px;
+}
+
+.right-nav{
+  box-sizing: border-box;
+  display: inline;
+  float: right;
+  margin:0;
+  text-align: right;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+.left-icon{
+  display: inline;
+  float: left;
+  text-align: left;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  -webkit-transition: background-color .5s, color .5s;
+  display: inline-block;
+  margin-right: 5px;
+  padding:17px;
+}
+li:hover{
+  background-color: #048eaa;
+  color: #ffffff;
+
+}
 /*---------- Header ----------------*/
+h1{
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+}
+
 header{
-  background-image: url("images/");
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("images/park.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 0;
+}
+
+form{
+  margin: auto;
+  max-width: 380px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+label{
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+input{
+  height: 40px;
+  margin: 10px 0;
+  outline: none;
+  width: 100%;
+}
+
+input:focus{
+  border: 2px solid #048eaa;
+  box-shadow: 0 0 5px #048eaa;
+}
+
+#doggo-name{
+  -webkit-transition: background-color .5s, color .5s;
+  background-color: #75e2e6;
+  border: 0;
+  height: 40px;
+  margin:15px 0;
+  outline: none;
+  width: 100%;
+}
+
+#doggo-name:hover{
+  background-color: #048eaa;
+  color: #ffffff;
+}
+
+.main-doggo-name{
+  font-weight: 800;
 }
 
 /*---------- Aritcle ---------------*/
+.background-article{
+  background-color:#ffffff;
+}
+
 article{
-  max-width: 800px;
+  background-color: #ffffff;
   display: inline-block;
+  max-width: 1000px;
 }
 
 /*---------- Section ---------------*/
 section{
   float: left;
+  margin: 30px;
   width: 240px;
-  margin: 10px;
 }
 
 section p{
@@ -43,26 +164,45 @@ section p{
   text-align: left;
 }
 
+.doggo-pics{
+    -webkit-transition: border-color .5s;
+    border-color: #048eaa;
+    border-radius: 50%;
+    border-style: solid;
+    border: 4px;
+    width: 200px;
+}
+
+.doggo-pics:hover{
+  border-color: #75e2e6;
+}
+
 .doggo-section-button{
+  -webkit-transition: background-color .5s, color .5s;
   background-color: #048eaa;
   color: white;
-}
-/*.left{
-  float: left;
-}
-
-.center{
-  float: center;
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 10px;
+  width: 240px;
 }
 
-.right{
-  float: right;
-}*/
+.doggo-section-button:hover{
+  background-color: #75e2e6;
+  color: #000;
+}
+
 /*---------- Footer ----------------*/
 footer{
-  display: block;
   background-color: #048eaa;
   color: #ffffff;
+  display: block;
+  padding: 20px;
+}
+
+.social-share{
+  margin: 10px;
+  width: 30px;
 }
 
 /*---------- Media Queries ---------*/
@@ -73,13 +213,26 @@ footer{
 }
 
 /*---- Typical Tablet Size ---------*/
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 900px){
+  article{
+    max-width: 600px;
+  }
+  li{
+    padding: 18px 5px;
+  }
 }
 
 /*---- Large Phones ----------------*/
-@media screen and (max-width: 440px){
-
+@media screen and (max-width: 600px){
+  article{
+    max-width: 300px;
+  }
+  form{
+    max-width: 300px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
 }
 
 /*---- Small Screens ---------------*/

@@ -6,29 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 <body>
 <nav>
-  <div class="home-icon">
-    <a href=""><img src=""></a>
+  <div class="limit-width clearfix">
+    <div class="left-icon">
+      <img src="images/dog-icon.svg" class="icon-img">
+    </div>
+    <div class="right-nav">
+      <ul class="right-nav clearfix">
+        <a href=""><li>How to Dog</li></a>
+        <a href=""><li>What is Dog</li></a>
+        <a href=""><li>Facts From Dog</li></a>
+      </ul>
+    </div>
   </div>
-  <a href="">How to Dog</a>
-  <a href="">What is Dog</a>
-  <a href="">Facts From Dog</a>
 </nav>
 <header>
-<h1>A Site about <span>Some Dogs</span></h1>
-<img src="">
+<h1>A Site about <span class="main-doggo-name">Some Dogs</span></h1>
+<img src="images/dog1-sq.jpg" class="doggo-pics">
 <form>
-  <label>Name</label>
-  <input type="text" name="">
-  <button class="doggo-name">Name This Dog</button>
+  <label>Name
+  <br>
+  <input type="text" name="" placeholder="Please Name Me" class="doggo-name-input">
+  <br>
+  <button id="doggo-name">Name This Dog</button>
 </form>
 </header>
+<div class="background-article">
 <article>
   <section class="left">
     <h2>How To Dog</h2>
-    <img src="">
+    <img src="images/dog2-sq.jpg" class="doggo-pics">
     <p>Dat tungg tho pupperino length
 boy. borkdrive aqua doggo.
 Maximum borkdrive long doggo
@@ -42,7 +52,7 @@ boofers pupper heck ruff.</p>
   </section>
   <section class="center">
     <h2>What Is Dogs</h2>
-        <img src="">
+    <img src="images/dog3-sq.jpg" class="doggo-pics">
     <p>Long doggo smol borking doggo
 with a long snoot for pats
 pupperino h*ck heckin angery
@@ -57,7 +67,7 @@ waggy wags stop it fren.</p>
   </section>
   <section class="right">
     <h2>Facts From Dogs</h2>
-    <img src="">
+    <img src="images/dog4-sq.jpg" class="doggo-pics">
     <p>Most angery pupper I have ever
 seen such treat heck, dat tungg tho.
 You are doin me a concern shibe
@@ -69,12 +79,13 @@ made many woofs.</p>
 <button class="doggo-section-button">Facts</button>
   </section>
 </article>
+</div>
 <footer>
   <p class="footer-text">Learn About Dogs Online</p>
-  <a href=""><img src="">Facebook</a>
-  <a href=""><img src="">Instagram</a>
-  <a href=""><img src="">LinkedIn</a>
-  <a href=""><img src="">Twitter</a>
+  <a href=""><img src="images/twitter.svg" class="social-share"></a>
+  <a href=""><img src="images/instagram.svg" class="social-share"></a>
+  <a href=""><img src="images/facebook.svg" class="social-share"></a>
+  <a href=""><img src="images/linkedin.svg" class="social-share"></a>
 </footer>
 </body>
 <script type="text/javascript" src="main.js"></script>

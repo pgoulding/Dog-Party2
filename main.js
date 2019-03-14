@@ -1,11 +1,16 @@
 /*---------- Query Selectors -----------*/
-var whatevs = document.querySelector('.whatevs');
+var displayDogName = document.querySelector('.main-doggo-name');
+var inputDogName = document.querySelector('.doggo-name-input');
+var btnDogName = document.querySelector('#doggo-name');
 
 /*---------- Global Variables ----------*/
-var example = ;
 
 /*---------- Event Listeners -----------*/
-*.addEventListener('click', )
+
+btnDogName.addEventListener('click', changeName);
 
 /*---------- Functions -----------------*/
-function
+function changeName(e){
+  e.preventDefault()
+  displayDogName.innerText = inputDogName.value;
+}
