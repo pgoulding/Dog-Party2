@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 <body>
 <nav>
   <div class="limit-width clearfix">
     <div class="left-icon">
-      <a href=""><img src="images/dog-icon.svg" class="icon-img" align="middle"></a>
+      <img src="images/dog-icon.svg" class="icon-img">
     </div>
-    <div class="right-nav clearfix">
-      <a href="">How to Dog</a>
-      <a href="">What is Dog</a>
-      <a href="">Facts From Dog</a>
+    <div class="right-nav">
+      <ul class="right-nav clearfix">
+        <a href=""><li>How to Dog</li></a>
+        <a href=""><li>What is Dog</li></a>
+        <a href=""><li>Facts From Dog</li></a>
+      </ul>
     </div>
   </div>
 </nav>
@@ -24,9 +27,9 @@
 <h1>A Site about <span class="main-doggo-name">Some Dogs</span></h1>
 <img src="images/dog1-sq.jpg" class="doggo-pics">
 <form>
-  <label>Name</label>
+  <label>Name
   <br>
-  <input type="text" name="" class="doggo-name-input">
+  <input type="text" name="" placeholder="Please Name Me" class="doggo-name-input">
   <br>
   <button id="doggo-name">Name This Dog</button>
 </form>
