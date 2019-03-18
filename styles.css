@@ -33,7 +33,7 @@ nav a{
 }
 
 nav img{
-  -webkit-transition: transform 1s;
+  -webkit-transition: transform .5s;
   background-color: #75e2e6;
   display: inline;
   margin: 5px;
@@ -71,7 +71,7 @@ ul{
 }
 
 li{
-  -webkit-transition: background-color .5s, color .5s;
+  -webkit-transition: background-color .2s, color .2s;
   display: inline-block;
   margin-right: 5px;
   padding:17px;
@@ -120,10 +120,11 @@ input{
 input:focus{
   border: 2px solid #048eaa;
   box-shadow: 0 0 2px 2px #048eaa;
+  outline: none;
 }
 
 #doggo-name{
-  -webkit-transition: background-color .5s, color .5s;
+  -webkit-transition: background-color .2s, color .2s;
   background-color: #75e2e6;
   border: 0;
   height: 40px;
@@ -162,10 +163,11 @@ section{
 section p{
   height: 170px;
   text-align: left;
+  -webkit-transition: visibility .3s;
 }
 
 .doggo-pics{
-    -webkit-transition: border-color .5s;
+    -webkit-transition: border-color .2s;
     border-color: #048eaa;
     border-radius: 50%;
     border-style: solid;
@@ -177,7 +179,7 @@ section p{
 }
 
 .doggo-section-button{
-  -webkit-transition: background-color .5s, color .5s;
+  -webkit-transition: background-color .2s, color .2s;
   background-color: #048eaa;
   color: white;
   cursor: pointer;
@@ -213,25 +215,57 @@ footer{
 
 /*---- Typical Tablet Size ---------*/
 @media screen and (max-width: 900px){
+  
   article{
     max-width: 600px;
   }
+  
   li{
     padding: 18px 5px;
   }
+  
+  section.right{
+    margin: auto;
+    float: none;
+    width: 400px;
+  }
+
+  #column-3-text{
+    height: 75px
+  }
+
 }
 
 /*---- Large Phones ----------------*/
 @media screen and (max-width: 600px){
+  
   article{
     max-width: 300px;
-  }
+    }
+
   form{
     max-width: 300px;
   }
+
   h1{
     font-size: 1.5em;
   }
+
+  section.right{
+    float: left;
+    margin: 30px;
+    width: 240px;
+  }
+
+  #column-3-text{
+    height: 140px;
+    text-align: left;
+  }
+
+  section{
+    margin-bottom: 0;
+  }
+
 }
 
 /*---- Small Screens ---------------*/
